@@ -31,4 +31,4 @@ jobs:
 
       - name: Validify links
         run: |
-          pytest .\.github\workflows\test_links.py
+          pytest ./.github/workflows/test_links.py
