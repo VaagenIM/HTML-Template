@@ -29,6 +29,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pytest
 
-      - name: Validify links
+      - name: Validate links
         run: |
           pytest ./.github/workflows/test_links.py
