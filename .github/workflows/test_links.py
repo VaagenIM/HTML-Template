@@ -31,6 +31,9 @@ def test_href(pytestconfig):
 
 
 def test_src():
+    print(ROOT_FOLDER)
+    print(HTML_FILES)
+    assert False
     for content in CONTENTS:
         paths = re.findall(regex('src'), content, flags=re.IGNORECASE)
         [verify_attr_value(path) for path in paths]
