@@ -12,7 +12,7 @@ CONTENTS = [open(file, 'r').read() for file in FILES if file.lower().endswith('.
 def validate_paths(rel_paths: list) -> bool:
     is_valid = True
     for path in rel_paths:
-        is_url = re.match(r'^https?://', path, flags=re.IGNORECASE)
+        is_url = re.match(r'^(#|\/$|https?:\/\/)', path, flags=re.IGNORECASE)
         is_file = any(path.split('/')[-1] in file.split('/') for file in FILES)
         if not is_url and not is_file:
             print(f'ERROR: File not found: {path}')
