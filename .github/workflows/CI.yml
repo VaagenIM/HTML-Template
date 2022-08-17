@@ -32,3 +32,5 @@ jobs:
       - name: Validate links
         run: |
           pytest ./.github/workflows/validate_links.py
+
+      - uses: education/autograding@v1
