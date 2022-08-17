@@ -1,10 +1,6 @@
 name: GitHub Classroom Workflow
 
-on:
-  workflow_run:
-    workflows: ["Pytest"]
-    types:
-      - completed
+on: [push]
 
 permissions:
   checks: write

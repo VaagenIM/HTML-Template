@@ -1,24 +1,34 @@
 {
   "tests": [
     {
-      "name": "HTML_Filer",
+      "name": "Test Gyldige lenker",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest ./.github/workflows/validate_links.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Inneholder HTML",
       "setup": "",
       "run": "ls -R",
       "input": "",
       "output": "html",
       "comparison": "regex",
-      "timeout": 1,
-      "points": 10
+      "timeout": 10,
+      "points": 50
     },
     {
-      "name": "Bilde_Filer",
+      "name": "Inneholder bilder",
       "setup": "",
       "run": "ls -R",
       "input": "",
       "output": "(jpg)|(png)|(gif)|(jpeg)",
       "comparison": "regex",
-      "timeout": 1,
-      "points": 10
+      "timeout": 10,
+      "points": 25
     }
   ]
 }
