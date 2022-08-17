@@ -1,11 +1,21 @@
 {
   "tests": [
     {
-      "name": "Verify HTML Links",
+      "name": "HTML_Filer",
       "setup": "",
-      "run": "ls",
+      "run": "ls -R",
       "input": "",
       "output": "html",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Bilde_Filer",
+      "setup": "",
+      "run": "ls -R",
+      "input": "",
+      "output": "(jpg)|(png)|(gif)|(jpeg)",
       "comparison": "regex",
       "timeout": 1,
       "points": 10
