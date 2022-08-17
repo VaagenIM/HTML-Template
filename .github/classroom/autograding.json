@@ -1,24 +1,34 @@
 {
   "tests": [
     {
-      "name": "Test Gyldige lenker",
+      "name": "Inneholder Gyldige lenker",
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest ./.github/workflows/validate_links.py",
       "input": "",
-      "output": "",
+      "output": "[100%]",
       "comparison": "included",
       "timeout": 10,
-      "points": 25
+      "points": 20
+    },
+    {
+      "name": "Inneholder Index.html",
+      "setup": "",
+      "run": "ls -R",
+      "input": "",
+      "output": "index.html",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
     },
     {
       "name": "Inneholder HTML",
       "setup": "",
       "run": "ls -R",
       "input": "",
-      "output": "html",
-      "comparison": "regex",
+      "output": ".html",
+      "comparison": "included",
       "timeout": 10,
-      "points": 50
+      "points": 20
     },
     {
       "name": "Inneholder bilder",
@@ -28,7 +38,17 @@
       "output": "(jpg)|(png)|(gif)|(jpeg)",
       "comparison": "regex",
       "timeout": 10,
-      "points": 25
+      "points": 20
+    },
+    {
+      "name": "Inneholder CSS dokument",
+      "setup": "",
+      "run": "ls -R",
+      "input": "",
+      "output": ".css",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
     }
   ]
 }
