@@ -3,9 +3,9 @@
     {
       "name": "Verify HTML Links",
       "setup": "",
-      "run": "echo Godt jobba, fant ingen feil i lenkene! Men husk, jeg kan ta feil...",
+      "run": "ls",
       "input": "",
-      "output": ".",
+      "output": "html",
       "comparison": "regex",
       "timeout": 1,
       "points": 10
