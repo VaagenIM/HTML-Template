@@ -1,4 +1,4 @@
-# Min første nettside
+# Min HTML Nettside
 Her kan du skrive en kort tekst om hva nettsiden er; hvem er nettsiden for, hva slags innhold finnes her?
 
 ## Planlegging
